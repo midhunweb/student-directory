@@ -11,9 +11,9 @@ public class ChoicePanel {
 
      String choiceData(String ch){
         String choice = null;
-        String url = "jdbc:mysql://localhost:3306/students";
-        String username = "root";
-        String password = "100%Discount";
+        String url = "jdbc:mysql://localhost:xxxx/students";
+        String username = "yourusernamehere";
+        String password = "yourpasswordhere";
         PreparedStatement p = null;
         ResultSet rs = null;
 

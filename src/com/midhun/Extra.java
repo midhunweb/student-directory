@@ -9,9 +9,9 @@ import javax.activation.*;
 public class Extra {
 
     static void insertGrades(){
-        String url = "jdbc:mysql://localhost:3306/students";
-        String username = "root";
-        String password = "100%Discount";
+        String url = "jdbc:mysql://localhost:xxxx/students";
+        String username = "yourusernamehere";
+        String password = "yourpasswordhere";
         PreparedStatement p = null;
         ResultSet rs = null;
         try (Connection connection = DriverManager.getConnection(url, username, password)) {
@@ -68,7 +68,7 @@ public class Extra {
 
         String to = name+"@gmail.com";
 
-        String from = "midhunswampert777@gmail.com";
+        String from = "yourgmailid";
 
         // Assuming you are sending email from through gmails smtp
         String host = "smtp.gmail.com";
@@ -88,7 +88,7 @@ public class Extra {
 
             protected PasswordAuthentication getPasswordAuthentication() {
 
-                return new PasswordAuthentication("midhunswampert777@gmail.com", "99%Discount");
+                return new PasswordAuthentication("yourmailid", "yourpassword");
 
             }
 

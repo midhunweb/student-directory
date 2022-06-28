@@ -43,9 +43,9 @@ public class Main {
     }
 
     public static void excelToDatabase() {
-            String url = "jdbc:mysql://localhost:3306/students";
-            String username = "root";
-            String password = "100%Discount";
+            String url = "jdbc:mysql://localhost:xxxx/students";
+            String username = "yourusernamehere";
+            String password = "yourpasswordhere";
 
             System.out.println("Connecting database...");
             ReadExcel rc = new ReadExcel();
@@ -54,7 +54,7 @@ public class Main {
 
             try {
                 //reading data from a file in the form of bytes
-                FileInputStream fis = new FileInputStream("E:\\python-file\\data.xlsx");
+                FileInputStream fis = new FileInputStream("E:\\excelfilelocation\\data.xlsx");
                 //creates an XSSFWorkbook object by buffering the whole stream into the memory
                 wbook = new XSSFWorkbook(fis);
             } catch (FileNotFoundException e) {
@@ -82,7 +82,7 @@ public class Main {
                 try {
 
                     // Constructs a FileWriter given a file name, using the platform's default charset
-                    file = new FileWriter("E:\\python-file\\Json.txt");
+                    file = new FileWriter("E:\\filelocation\\Json.txt");
                     file.write(ja.toJSONString());
 
 
@@ -148,7 +148,7 @@ class ReadExcel {
         Workbook wbook = null; //initialize Workbook null
         try {
             //reading data from a file in the form of bytes
-            FileInputStream fis = new FileInputStream("E:\\python-file\\data.xlsx");
+            FileInputStream fis = new FileInputStream("E:\\excelfilelocation\\data.xlsx");
             //creates an XSSFWorkbook object by buffering the whole stream into the memory
             wbook = new XSSFWorkbook(fis);
         } catch (FileNotFoundException e) {
@@ -180,7 +180,7 @@ class ReadExcel {
         Workbook wbook = null; //initialize Workbook null
         try {
             //reading data from a file in the form of bytes
-            FileInputStream fis = new FileInputStream("E:\\python-file\\data.xlsx");
+            FileInputStream fis = new FileInputStream("E:\\excelfilelocation\\data.xlsx");
             //creates an XSSFWorkbook object by buffering the whole stream into the memory
             wbook = new XSSFWorkbook(fis);
         } catch (FileNotFoundException e) {
@@ -214,7 +214,7 @@ class ReadExcel {
         Workbook wbook = null; //initialize Workbook null
         try {
             //reading data from a file in the form of bytes
-            FileInputStream fis = new FileInputStream("E:\\python-file\\data.xlsx");
+            FileInputStream fis = new FileInputStream("E:\\excelfilelocation\\data.xlsx");
             //creates an XSSFWorkbook object by buffering the whole stream into the memory
             wbook = new XSSFWorkbook(fis);
         } catch (FileNotFoundException e) {
@@ -247,7 +247,7 @@ class ReadExcel {
         Workbook wbook = null; //initialize Workbook null
         try {
             //reading data from a file in the form of bytes
-            FileInputStream fis = new FileInputStream("E:\\python-file\\data.xlsx");
+            FileInputStream fis = new FileInputStream("E:\\excelfilelocation\\data.xlsx");
             //creates an XSSFWorkbook object by buffering the whole stream into the memory
             wbook = new XSSFWorkbook(fis);
         } catch (FileNotFoundException e) {
@@ -280,7 +280,7 @@ class ReadExcel {
         Workbook wbook = null; //initialize Workbook null
         try {
             //reading data from a file in the form of bytes
-            FileInputStream fis = new FileInputStream("E:\\python-file\\data.xlsx");
+            FileInputStream fis = new FileInputStream("E:\\excelfilelocation\\data.xlsx");
             //creates an XSSFWorkbook object by buffering the whole stream into the memory
             wbook = new XSSFWorkbook(fis);
         } catch (FileNotFoundException e) {
